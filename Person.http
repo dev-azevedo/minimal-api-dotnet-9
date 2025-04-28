@@ -1,0 +1,30 @@
+@Person_HostAddress = http://localhost:5168
+
+GET {{Person_HostAddress}}/person/
+Content-Type: application/json
+
+###
+GET {{Person_HostAddress}}/person/d0fe0e75-70d0-41cc-89ae-657a58c90a2e
+Content-Type: application/json
+
+###
+
+POST {{Person_HostAddress}}/person/
+Content-Type: application/json
+
+{
+  "name": "Azevedo"
+}
+
+###
+
+PUT {{Person_HostAddress}}/person/d0fe0e75-70d0-41cc-89ae-657a58c90a2e
+Content-Type: application/json
+
+{
+  "name": "Luana"
+}
+
+###
+DELETE {{Person_HostAddress}}/person/d0fe0e75-70d0-41cc-89ae-657a58c90a2e
+Content-Type: application/json
